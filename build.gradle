@@ -38,10 +38,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-//    implementation 'com.github.XieWujie:di:master'
     api project(":di-compiler")
     kapt project(":di-compiler")
     annotationProcessor project(":di-compiler")
 }
-
-//apply from: 'jcenter-push.gradle'
